@@ -84,8 +84,8 @@ class ID:
                 self.correct(i)
         return self.DF
                 
-    def csv(self,name,season,episode):
-        self.DF.to_csv("/dados/home/joaoviniciuspr/IC_Redes/Trabalhos/"+name+"/Temp"+str(season)+"/Ep"+str(episode)+"ID.csv")
+    def csv(self,name):
+        self.DF.to_csv("/dados/home/joaoviniciuspr/IC_Redes/Trabalhos/"+name+"/"+"ID.csv")
         
     def excel(self,name):
-        self.DF.to_excel("/dados/home/joaoviniciuspr/IC_Redes/Trabalhos/"+name+"/Temp"+str(season)+"/Ep"+str(episode)+"/ID.xls")
+        self.DF.to_excel("/dados/home/joaoviniciuspr/IC_Redes/Trabalhos/"+name+"/"+"ID.xls")

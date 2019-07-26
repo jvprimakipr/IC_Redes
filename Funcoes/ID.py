@@ -1,23 +1,36 @@
 import pandas as pd
 class ID:
-    def __init__(self):
+    def __init__(self,user,information):
         self.DF=pd.DataFrame(columns=['Label','Nick'])
-        self.DF.index.name='ID'
+        self.DF.index.name="ID"
+        self.folders=["dados","home",user,"IC_Redes","Trabalhos"]
+        self.folders.extend(information)
+        self.directory=""
+        for i in self.folders:
+            self.directory+="/"
+            self.directory+=i
+        self.directory+="/ID"
         
     def data(self):
         return self.DF
+    
+    def saving(self):
+        self.directory=""
+        for i in self.folders:
+            self.directory+="/"
+            self.directory+=i
+        self.directory+="/ID"
         
     def new(self,label,nick=''):
         if (self.find(label)==False and nick=='') or (self.find(label)==False and self.find(nick)==False):
-            self.DF.loc[self.ind(self.DF.shape[0]+1)]=[label,nick]
-            
+            self.DF.loc[self.ind(self.DF.shape[0]+1)]=[label,nick]         
         else:
             print('Esse personagem já está na lista')
             
     def news(self,L):
         for i in L:
-            if len(i)==1:
-                self.new(i[0])
+            if type(i)==str:
+                self.new(i)
             elif len(i)==2:
                 self.new(i[0],i[1])
     
@@ -52,6 +65,7 @@ class ID:
             d=input('Você realmente deseja deletar?')
             if d.lower()=='sim' or d.lower()=='s' or d.lower()=='yes':
                 self.DF = self.DF.drop([self.ind(self.DF.shape[0])])
+                print('Deletado')
         else:
             print(self.DF.iloc[line-1,:])
             d=input('Você realmente deseja deletar?')
@@ -59,14 +73,15 @@ class ID:
                 for i in range(line,self.DF.shape[0]):
                     self.DF.iloc[i-1,0:2]=self.DF.iloc[i,0:2]
                 self.DF = self.DF.drop([self.ind(self.DF.shape[0])])
+                print('Deletado')
                 
     def change(self,line1,line2):
-        line1=int(line1)
-        line2=int(line2)
-        aux1=self.DF.iloc[line1-1,0]
-        aux2=self.DF.iloc[line1-1,1]
-        self.DF.iloc[line1-1,0:2]=self.DF.iloc[line2-1,0:2]
-        self.DF.iloc[line2-1,0:2]=[aux1,aux2]
+        line1=int(line1)-1
+        line2=int(line2)-1
+        aux1=self.DF.iloc[line1,0]
+        aux2=self.DF.iloc[line1,1]
+        self.DF.iloc[line1,0:2]=self.DF.iloc[line2,0:2]
+        self.DF.iloc[line2,0:2]=[aux1,aux2]
         
     def review(self):
         for i in range(1,self.DF.shape[0]+1):
@@ -84,8 +99,8 @@ class ID:
                 self.correct(i)
         return self.DF
                 
-    def csv(self,name):
-        self.DF.to_csv("/dados/home/joaoviniciuspr/IC_Redes/Trabalhos/"+name+"/"+"ID.csv")
+    def csv(self):
+        self.DF.to_csv(self.directory+".csv")
         
-    def excel(self,name):
-        self.DF.to_excel("/dados/home/joaoviniciuspr/IC_Redes/Trabalhos/"+name+"/"+"ID.xls")
+    def excel(self):
+        self.DF.to_excel(self.directory+".xls")
