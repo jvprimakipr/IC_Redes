@@ -1,29 +1,18 @@
 import pandas as pd
 class ID:
-    def __init__(self,user,information):
+    
+    def __init__(self,folders,directory):
         self.DF=pd.DataFrame(columns=['Label','Nick'])
         self.DF.index.name="ID"
-        self.folders=["dados","home",user,"IC_Redes","Trabalhos"]
-        self.folders.extend(information)
-        self.directory=""
-        for i in self.folders:
-            self.directory+="/"
-            self.directory+=i
-        self.directory+="/ID"
+        self.folders = folders
+        self.directory = directory
         
     def data(self):
         return self.DF
-    
-    def saving(self):
-        self.directory=""
-        for i in self.folders:
-            self.directory+="/"
-            self.directory+=i
-        self.directory+="/ID"
         
     def new(self,label,nick=''):
         if (self.find(label)==False and nick=='') or (self.find(label)==False and self.find(nick)==False):
-            self.DF.loc[self.ind(self.DF.shape[0]+1)]=[label,nick]         
+            self.DF.loc[self.ind(self.DF.shape[0]+1)]=[label,nick.lower()]         
         else:
             print('Esse personagem já está na lista')
             
@@ -98,9 +87,19 @@ class ID:
             elif c!='':
                 self.correct(i)
         return self.DF
+    
+    def saving(self):
+        self.directory=""
+        for i in self.folders:
+            self.directory+="/"
+            self.directory+=i
+        
+    def importing(self):
+        self.DF=pd.read_csv(self.directory+'/ID.csv',dtype=str)
+        self.DF = self.DF.set_index("ID")
                 
     def csv(self):
-        self.DF.to_csv(self.directory+".csv")
+        self.DF.to_csv(self.directory+"/ID.csv")
         
     def excel(self):
-        self.DF.to_excel(self.directory+".xls")
+        self.DF.to_excel(self.directory+"/ID.xls")
