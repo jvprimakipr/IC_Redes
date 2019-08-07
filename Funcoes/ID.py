@@ -1,10 +1,10 @@
 import pandas as pd
 class ID:
     
-    def __init__(self,folders,directory):
-        self.DF=pd.DataFrame(columns=['Label','Nick'])
+    def __init__(self,directory):
+        self.DF=pd.DataFrame(columns=['Label','Nick'],dtype=str)
         self.DF.index.name="ID"
-        self.folders = folders
+        self.folders = []
         self.directory = directory
         
     def data(self):
@@ -88,7 +88,17 @@ class ID:
                 self.correct(i)
         return self.DF
     
-    def saving(self):
+    def inputing(self):
+        l=input('Label: ')
+        n=input('Nick: ')
+        while l.lower()!='stop'and n.lower()!='stop':
+            print('')
+            self.new(l,n)
+            l=input('Label: ')
+            n=input('Nick: ')
+    
+    def saving(self,folders):
+        self.folders = folders
         self.directory=""
         for i in self.folders:
             self.directory+="/"
@@ -97,6 +107,7 @@ class ID:
     def importing(self):
         self.DF=pd.read_csv(self.directory+'/ID.csv',dtype=str)
         self.DF = self.DF.set_index("ID")
+        self.DF.fillna('',inplace=True)
                 
     def csv(self):
         self.DF.to_csv(self.directory+"/ID.csv")
