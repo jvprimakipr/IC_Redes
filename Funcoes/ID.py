@@ -12,7 +12,7 @@ class ID:
         
     def new(self,label,nick=''):
         if (self.find(label)==False and nick=='') or (self.find(label)==False and self.find(nick)==False):
-            self.DF.loc[self.ind(self.DF.shape[0]+1)]=[label,nick.lower()]         
+            self.DF.loc[self.ind(self.DF.shape[0]+1)]=[label,nick]         
         else:
             print('Esse personagem já está na lista')
             

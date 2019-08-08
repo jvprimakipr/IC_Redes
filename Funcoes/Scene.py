@@ -48,6 +48,7 @@ class Scene:
         if m>=0 and s>=0 and s<60:
             var=self.sec(m,s)-self.sec(self.DF.iloc[-1,0],self.DF.iloc[-1,1])
             if var>0 and var <60:
+                self.DF.loc[self.scene(),'P1':self.character()]=sorted(self.DF.loc[self.scene(),'P1':self.character()])
                 self.DF.iloc[-1,2]=m
                 self.DF.iloc[-1,3]=s
                 self.actual_line+=1
@@ -61,10 +62,6 @@ class Scene:
                 print('Tempo Final <= Tempo Inicial')
             else:
                 print(self.scene()+' possui mais de 1 minuto')
-    
-    def end(self):
-        pass
-    
     
     def scene(self):
         return 'Scene'+str(self.actual_line)
