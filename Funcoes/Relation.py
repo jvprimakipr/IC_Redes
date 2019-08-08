@@ -1,4 +1,4 @@
-class Relacao:
+class Relation:
     def __init__(self,directory):
         self.directory=directory
         self.DF_scene=pd.read_csv(self.directory+'/Scene.csv',dtype=str)
