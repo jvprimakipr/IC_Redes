@@ -1,22 +1,43 @@
+import pandas as pd
 class Relation:
+    
     def __init__(self,directory):
         self.directory=directory
-        d={'Weight':['']}
-        self.DF=pd.DataFrame(d,columns=['Weight'],index=[0])
-        d1={'Origem':[''],'Destino':[''],'Peso':['']}
-        self.relacao=pd.DataFrame(d1,columns=['Origem','Destino','Peso'],index=['0'])
-        self.peso_atual=0
-        self.executado=0
+        self.weight=pd.Series()
+        d1={'Source':[''],'Target':[''],'Weight':['']}
+        self.relation=pd.DataFrame(d1,columns=['Source','Target','Weight'],index=['1'])
+        self.relation.index.name='Relation'
+        self.actual_weight=0
+        self.executed=False
+        
+    def data(self):
+        return self.relation
+        
+    def execut(self):
+        if self.executed:
+            return 'Já executado'
         
     def importing_id(self):
-        self.DF_ID=pd.read_csv(self.directory+'/ID.csv',dtype=str)
-        self.DF_ID=self.DF_ID.set_index("ID")
-        self.DF_ID.fillna('',inplace=True)
-        self.DF_ID=self.DF_ID.applymap(lambda x: x.lower())
+        self.id=pd.read_csv(self.directory+'/ID.csv',dtype=str)
+        self.id=self.id.set_index("ID")
+        self.id.fillna('',inplace=True)
+        self.id=self.id.applymap(lambda x: x.lower())
         
-    def importing_scene(self):
-        self.DF_scene=pd.read_csv(self.directory+'/Scene.csv',dtype=str)
-        self.DF_scene=self.DF_scene.set_index("Scene")
-        self.DF_scene.fillna('',inplace=True)
-        for i in self.DF_scene.columns[0:4]:
-            self.DF_scene[i] = pd.to_numeric(self.DF_scene[i])
+    def importing(self):
+        self.scene=pd.read_csv(self.directory+'/Scene.csv',dtype=str)
+        self.scene=self.scene.set_index("Scene")
+        self.scene.fillna('',inplace=True)
+        for i in self.scene.columns[0:4]:
+            self.scene[i] = pd.to_numeric(self.scene[i])
+            
+    def csv(self):
+        if self.executed:
+            self.relation.to_csv(self.directory+'/Relation.csv')
+        else:
+            print('Execute primeiro')
+            
+    def excel(self,nome):
+        if self.executed:
+            self.relation.to_csv(self.directory+'/Relation.xls')
+        else:
+            print('Execute primeiro')

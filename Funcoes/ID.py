@@ -2,17 +2,17 @@ import pandas as pd
 class ID:
     
     def __init__(self,directory):
-        self.DF=pd.DataFrame(columns=['Label','Nick'],dtype=str)
-        self.DF.index.name="ID"
+        self.id=pd.DataFrame(columns=['Label','Nick'],dtype=str)
+        self.id.index.name='ID'
         self.folders = []
         self.directory = directory
         
     def data(self):
-        return self.DF
+        return self.id
         
     def new(self,label,nick=''):
         if (self.find(label)==False and nick=='') or (self.find(label)==False and self.find(nick)==False):
-            self.DF.loc[self.ind(self.DF.shape[0]+1)]=[label,nick]         
+            self.id.loc[self.ind(self.id.shape[0]+1)]=[label,nick]         
         else:
             print('Esse personagem já está na lista')
             
@@ -29,9 +29,9 @@ class ID:
         return b
     
     def find(self,word):
-        DF1=self.DF.Label==word
+        DF1=self.id.Label==word
         v1=DF1.sum()
-        DF2=self.DF.Nick==word
+        DF2=self.id.Nick==word
         v2=DF2.sum()
         if v1+v2==0:
             return False
@@ -40,77 +40,77 @@ class ID:
     
     def correct(self,line=0):
         line=int(line)-1
-        a=input('Trocar '+self.DF.iloc[line,0]+' por: ')
-        b=input('Trocar '+self.DF.iloc[line,1]+' por: ')
+        a=input('Trocar '+self.id.iloc[line,0]+' por: ')
+        b=input('Trocar '+self.id.iloc[line,1]+' por: ')
         if a!='':
-            self.DF.iloc[line,0]=a
+            self.id.iloc[line,0]=a
         if b!='':
-            self.DF.iloc[line,1]=b
+            self.id.iloc[line,1]=b
         
     def delete(self,line=0):
-        line=int(line)
-        if line==0:
-            print(self.DF.iloc[line-1,:])
+        line=int(line)-1
+        if line==-1:
+            print(self.id.iloc[line,:])
             d=input('Você realmente deseja deletar?')
             if d.lower()=='sim' or d.lower()=='s' or d.lower()=='yes':
-                self.DF = self.DF.drop([self.ind(self.DF.shape[0])])
+                self.id = self.id.drop([self.ind(self.id.shape[0])])
                 print('Deletado')
         else:
-            print(self.DF.iloc[line-1,:])
+            print(self.id.iloc[line,:])
             d=input('Você realmente deseja deletar?')
             if d.lower()=='sim' or d.lower()=='s' or d.lower()=='yes':
-                for i in range(line,self.DF.shape[0]):
-                    self.DF.iloc[i-1,0:2]=self.DF.iloc[i,0:2]
-                self.DF = self.DF.drop([self.ind(self.DF.shape[0])])
+                for i in range(line,self.id.shape[0]):
+                    self.id.iloc[i,0:2]=self.id.iloc[i+1,0:2]
+                self.id = self.id.drop([self.ind(self.id.shape[0])])
                 print('Deletado')
                 
     def change(self,line1,line2):
         line1=int(line1)-1
         line2=int(line2)-1
-        aux1=self.DF.iloc[line1,0]
-        aux2=self.DF.iloc[line1,1]
-        self.DF.iloc[line1,0:2]=self.DF.iloc[line2,0:2]
-        self.DF.iloc[line2,0:2]=[aux1,aux2]
+        aux1=self.id.iloc[line1,0]
+        aux2=self.id.iloc[line1,1]
+        self.id.iloc[line1,0:2]=self.id.iloc[line2,0:2]
+        self.id.iloc[line2,0:2]=[aux1,aux2]
         
     def review(self):
-        for i in range(1,self.DF.shape[0]+1):
-            print(self.DF.iloc[i-1,:])
+        for i in range(1,self.id.shape[0]+1):
+            print(self.id.iloc[i-1,:])
             c=input('Corrigir:')
             print('')
             if c.lower()=='del' or c.lower()=='delete':
                 self.delete(i)
             elif c.lower()=='change':
-                ch=input('Trocar linha '+self.DF.index[i-1]+' pela linha: ')
+                ch=input('Trocar linha '+self.id.index[i-1]+' pela linha: ')
                 ch=int(ch)
-                if ch>=1 and ch<=self.DF.shape[0]:
+                if ch>=1 and ch<=self.id.shape[0]:
                     self.change(i,ch)
             elif c!='':
                 self.correct(i)
-        return self.DF
+        return self.id
     
     def inputing(self):
         l=input('Label: ')
         n=input('Nick: ')
         while l.lower()!='stop'and n.lower()!='stop':
-            print('')
             self.new(l,n)
+            print('')
             l=input('Label: ')
             n=input('Nick: ')
     
     def saving(self,folders):
         self.folders = folders
-        self.directory=""
+        self.directory=''
         for i in self.folders:
-            self.directory+="/"
+            self.directory+='/'
             self.directory+=i
         
     def importing(self):
-        self.DF=pd.read_csv(self.directory+'/ID.csv',dtype=str)
-        self.DF = self.DF.set_index("ID")
-        self.DF.fillna('',inplace=True)
+        self.id=pd.read_csv(self.directory+'/ID.csv',dtype=str)
+        self.id = self.id.set_index('ID')
+        self.id.fillna('',inplace=True)
                 
     def csv(self):
-        self.DF.to_csv(self.directory+"/ID.csv")
+        self.id.to_csv(self.directory+'/ID.csv')
         
     def excel(self):
-        self.DF.to_excel(self.directory+"/ID.xls")
+        self.id.to_excel(self.directory+'/ID.xls')
