@@ -2,13 +2,14 @@ import pandas as pd
 class Scene:
     
     def __init__(self,directory):
-        d={'Min_i':[0],'Seg_i':[0],'Min_f':[''],'Seg_f':['']}
-        self.scene=pd.DataFrame(d,columns=['Min_i','Seg_i','Min_f','Seg_f'],index=['Scene1'])
+        self.directory = directory
+        d={'Min_i':[0],'Seg_i':[0],'Min_f':[''],'Seg_f':[''],'Number':['']}
+        self.scene=pd.DataFrame(d,columns=['Min_i','Seg_i','Min_f','Seg_f','Number'],index=['Scene1'])
         self.scene.index.name='Scene'
         self.id = 0
+        self.importing_id()
         self.actual_line=1
         self.actual_col=0
-        self.directory = directory
         
     def data(self):
         return self.scene
@@ -20,7 +21,7 @@ class Scene:
                 print('Id repetido na cena')
             else:
                 self.actual_col+=1
-                if self.actual_col > self.scene.shape[1]-4:
+                if self.actual_col > self.scene.shape[1]-5:
                     self.scene[self.ch()]=['']*self.scene.shape[0]
                 self.scene.loc[self.sc(),self.ch()]=Id
             
@@ -51,6 +52,7 @@ class Scene:
                 self.scene.loc[self.sc(),'P1':self.ch()]=sorted(self.scene.loc[self.sc(),'P1':self.ch()])
                 self.scene.iloc[-1,2]=m
                 self.scene.iloc[-1,3]=s
+                self.scene.loc[self.sc(),'Number']=self.actual_col
                 self.actual_line+=1
                 self.actual_col=0
                 self.scene.loc[self.sc()]=['']*self.scene.shape[1]
@@ -78,7 +80,7 @@ class Scene:
         return b
     
     def find(self,Id):
-        DF1=self.scene.iloc[[self.actual_line-1],4:self.actual_col+4]==Id
+        DF1=self.scene.iloc[[self.actual_line-1],5:self.actual_col+5]==Id
         v1=sum(DF1.sum())
         if v1!=0:
             return True
@@ -137,7 +139,7 @@ class Scene:
         self.scene=pd.read_csv(self.directory+'/Scene.csv',dtype=str)
         self.scene=self.scene.set_index('Scene')
         self.scene.fillna('',inplace=True)
-        for i in self.scene.columns[0:4]:
+        for i in self.scene.columns[0:5]:
             self.scene[i] = pd.to_numeric(self.scene[i])
         m=self.scene.iloc[-1,2]
         s=self.scene.iloc[-1,3]
