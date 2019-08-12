@@ -106,7 +106,25 @@ class Scene:
         else:
             print('ID incorreto')
             return False
-            
+    
+    def reconvert(self,num):
+        if type(num)==int:
+            num=self.ind(num)
+        return self.id.loc[num,'Label']
+    
+    def review(self):
+        for i in range(1,self.scene.shape[0]):
+            n=self.scene.iloc[i-1,4]
+            aux=pd.DataFrame(columns=self.scene.columns[0:5+n],index=[self.scene.index[i-1]])
+            aux.loc['Names',:]=['']*aux.shape[1]
+            a=list(self.scene.iloc[i-1,0:5+n])
+            b=a[0:5]+[self.reconvert(x) for x in a[5:len(a)]]
+            aux.iloc[0,:]=a
+            aux.iloc[1,:]=b
+            print(aux)
+            e=input('Está correto?')
+            print('')
+    
     def inputing(self):
         n=input('Name: ')
         while n.lower()!='stop'and n.lower()!='pare':
@@ -154,15 +172,15 @@ class Scene:
         
     def csv(self):
         if self.scene.loc[self.sc(),'P1']=='':
-            aux=self.scene.drop([self.sc()])
-            aux.to_csv(self.directory+'/Scene.csv')
+            arq=self.scene.drop([self.sc()])
+            arq.to_csv(self.directory+'/Scene.csv')
         else:
             print('Digite o tempo final da ultima cena')
         
     def excel(self):
         if self.scene.loc[self.sc(),'P1']=='':
-            aux=self.scene.drop([self.sc()])
-            aux.to_csv(self.directory+'/Scene.xls')
+            arq=self.scene.drop([self.sc()])
+            arq.to_csv(self.directory+'/Scene.xls')
         else:
             print('Digite o tempo final da ultima cena')
     
