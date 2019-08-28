@@ -2,17 +2,19 @@ import pandas as pd
 class ID:
     
     def __init__(self,directory):
-        self.id=pd.DataFrame(columns=['Label','Nick'],dtype=str)
+        self.id=pd.DataFrame(columns=['Label','Nick','Actor'],dtype=str)
         self.id.index.name='ID'
         self.folders = []
         self.directory = directory
         
-    def data(self):
-        return self.id
+    def data(self,actor=0):
+        if actor==1:
+            return self.id
+        return self.id.loc[:,['Label','Nick']]
         
-    def new(self,label,nick=''):
+    def new(self,label,nick='',actor=''):
         if (self.find(label)==False and nick=='') or (self.find(label)==False and self.find(nick)==False):
-            self.id.loc[self.ind(self.id.shape[0]+1)]=[label,nick]         
+            self.id.loc[self.ind(self.id.shape[0]+1)]=[label,nick,actor]         
         else:
             print('Esse personagem já está na lista')
             
@@ -22,6 +24,8 @@ class ID:
                 self.new(i)
             elif len(i)==2:
                 self.new(i[0],i[1])
+            elif len(i)==3:
+                self.new(i[0],i[1],i[2])
     
     def ind(self,num):
         a='00'+str(num)
@@ -42,10 +46,13 @@ class ID:
         line=int(line)-1
         a=input('Trocar '+self.id.iloc[line,0]+' por: ')
         b=input('Trocar '+self.id.iloc[line,1]+' por: ')
+        c=input('Trocar '+self.id.iloc[line,2]+' por: ')
         if a!='':
             self.id.iloc[line,0]=a
         if b!='':
             self.id.iloc[line,1]=b
+        if c!='':
+            self.id.iloc[line,2]=c
         
     def delete(self,line=0):
         line=int(line)-1
@@ -60,7 +67,7 @@ class ID:
             d=input('Você realmente deseja deletar?')
             if d.lower()=='sim' or d.lower()=='s' or d.lower()=='yes':
                 for i in range(line,self.id.shape[0]):
-                    self.id.iloc[i,0:2]=self.id.iloc[i+1,0:2]
+                    self.id.iloc[i,0:3]=self.id.iloc[i+1,0:3]
                 self.id = self.id.drop([self.ind(self.id.shape[0])])
                 print('Deletado')
                 
@@ -69,8 +76,9 @@ class ID:
         line2=int(line2)-1
         aux1=self.id.iloc[line1,0]
         aux2=self.id.iloc[line1,1]
-        self.id.iloc[line1,0:2]=self.id.iloc[line2,0:2]
-        self.id.iloc[line2,0:2]=[aux1,aux2]
+        aux3=self.id.iloc[line1,2]
+        self.id.iloc[line1,0:3]=self.id.iloc[line2,0:3]
+        self.id.iloc[line2,0:3]=[aux1,aux2,aux3]
         
     def review(self):
         for i in range(1,self.id.shape[0]+1):
@@ -91,11 +99,13 @@ class ID:
     def inputing(self):
         l=input('Label: ')
         n=input('Nick: ')
-        while l.lower()!='stop'and n.lower()!='stop':
-            self.new(l,n)
+        a=input('Actor: ')
+        while l.lower()!='stop' and n.lower()!='stop' and a.lower()!='stop':
+            self.new(l,n,a)
             print('')
             l=input('Label: ')
             n=input('Nick: ')
+            a=input('Actor: ')
     
     def saving(self,folders):
         self.folders = folders
