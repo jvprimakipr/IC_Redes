@@ -23,7 +23,7 @@ ID,Label,Nick,Actor
 022,Colonel Craig,CC,Thomas Craig Plumer
 023,Oficial EUA,OE,Bill Walters
 024,General Sullivan,GS,Desconhecido
-025,General Afeganistão,GA,David Yukon
+025,General Afeganistao,GA,David Yukon
 026,Aeromoca 1,A1,Ricki Noel Lander
 027,Aeromoca 2,A2,Jeannine Kaspar
 028,Aeromoca 3,A3,Sarah Cahill
@@ -45,10 +45,10 @@ ID,Label,Nick,Actor
 044,Terrorista 6,T6,Ido Ezra
 045,Terrorista 7 das cameras,T7,Ray Siegle
 046,Terrorista 8,T8,Ben Hernandez
-047,Terrorista 9 aux cameras,T9,Desconhecido
-048,Terrorista 10 batendo na porta,T10,Desconhecido
-049,Terrorista 11 burro,T11,Desconhecido
-050,Terrorista 12 encontra armadura,T12,Desconhecido
+047,Terrorista 9,T9,Desconhecido
+048,Terrorista 10,T10,Desconhecido
+049,Terrorista 11,T11,Desconhecido
+050,Terrorista 12,T12,Desconhecido
 051,Terrorista atirador 1,TA1,Brian Simpson
 052,Terrorista atirador 2,TA2,Desconhecido
 053,Terrorista atirador 3,TA3,Jon Braver
@@ -60,57 +60,56 @@ ID,Label,Nick,Actor
 059,Reporter 2,R2,Adam Harrington
 060,Reporter 3,R3,Meera Simhan
 061,Reporter 4,R4,Ben Newmark
-062,Reporter 5,R5,Nick Nicholson
-063,Reporter Amira Ahmed,RAA,Nazanin Boniadi
-064,Jim Cramer,JC,Jim Cramer
-065,Zorianna Kit,ZK,Zorianna Kit
-066,Menino na roda gigante,MRG1,
-067,Menina na roda gigante,MRG2,
-068,Mulher do Stan 1,MS1,Lana Kinnear
-069,Mulher do Stan 2,MS2,Nicole Lindeblad
-070,Mulher do Stan 3,MS3,Masha Lund
-071,Mulher do Stan 4,MS4,Gabrielle Tuite
-072,Frentista vermelho,FV,Desconhecido
-073,Jornalista,J,Brett Padelford
-074,Atendente do Bar 1,AB1,Desconhecido
-075,Atendente do Bar 2,AB2,Desconhecido
-076,Paparazzi,P,Desconhecido
-077,Pai de Gulmira,PG,Anthony Martins
-078,Mae de Gulmira,MG,Sahar Bibiyan
-079,Filho de Gulmira,FOG,Javan Tahir
-080,Filha de Gulmira,FAG,Desconhecido
-081,Terrorista de Gulmira,TG,Mark Wagner
-082,Refem de Gulmira,RG,Desconhecido
-083,Terrorista Chantageador,TC,Desconhecido
-084,Terrorista no Tanque,TT,Desconhecido
-085,Terrorista protegendo Jericho,TPJ,Desconhecido
-086,Motorista do Raza,MR,Desconhecido
-087,Analista da CAOC 1,AC1,Tim Griffin
-088,Analista da CAOC 2,AC2,Joshua Harto
-089,Analista da CAOC 3,AC3,Micah Hauptman
-090,Analista da CAOC 4,AC4,James Bethea
-091,Sargento da CAOC,SC,Sylvette Ortiz
-092,Piloto de caca 1,PC1,Tim Rigby
-093,Piloto de caca 2,PC2,Russell Richardson
-094,Oficial da Forca Aerea,OFA,Marvin Jordan
-095,Tenente da Forca Aerea,TFA,Justin Rex
-096,Capitao da Forca Aerea CAOC,CFAC,Desconhecido
-097,Guardacosta do Obadiah,GO,Desconhecido
-098,Engenheiro Frank Nyi,EFN,Frank Nyi
-099,Agente da Shield 1,AS1,David Castillo
-100,Agente da Shield 2,AS2,Darryl Reeves
-101,Agente da Shield 3,AS3,Jason Rodriguez
-102,Agente da Shield 4,AS4,Paul Sklar
-103,Agente da Shield 5,AS5,Desconhecido
-104,Criança no Carro SUV 1,CCS1,Reid Harper
-105,Criança no Carro SUV 2,CCS2,Summer Kylie Remington
-106,Criança no Carro SUV 3,CCS3,Ava Rose Williams
-107,Criança no Carro SUV 4,CCS4,Vladimir Kubr
-108,Criança no Carro SUV 5,CCS5,Callie Marie Croughwell
-109,Mulher no Carro SUV,MCS,Donna Evans Merlo
-110,Motoqueiro,M,Desconhecido
-111,Reporter cena final 1,RCF1,Desconhecido
-112,Reporter cena final 2,RCF2,Desconhecido
-113,Reporter cena final 3,RCF3,Desconhecido
-114,Cameraman cena final 1,CCF1,Desconhecido
-115,Cameraman cena final 2,CCF2,Desconhecido
+062,Reporter Amira Ahmed,RAA,Nazanin Boniadi
+063,Jim Cramer,JC,Jim Cramer
+064,Zorianna Kit,ZK,Zorianna Kit
+065,Menino na roda gigante,MRG1,
+066,Menina na roda gigante,MRG2,
+067,Mulher do Stan 1,MS1,Lana Kinnear
+068,Mulher do Stan 2,MS2,Nicole Lindeblad
+069,Mulher do Stan 3,MS3,Masha Lund
+070,Mulher do Stan 4,MS4,Gabrielle Tuite
+071,Frentista vermelho,FV,Desconhecido
+072,Jornalista,J,Brett Padelford
+073,Atendente do Bar 1,AB1,Desconhecido
+074,Atendente do Bar 2,AB2,Desconhecido
+075,Paparazzi,P,Desconhecido
+076,Pai de Gulmira,PG,Anthony Martins
+077,Mae de Gulmira,MG,Sahar Bibiyan
+078,Filho de Gulmira,FOG,Javan Tahir
+079,Filha de Gulmira,FAG,Desconhecido
+080,Terrorista de Gulmira,TG,Mark Wagner
+081,Refem de Gulmira,RG,Desconhecido
+082,Terrorista Chantageador,TC,Desconhecido
+083,Terrorista no Tanque,TT,Desconhecido
+084,Terrorista protegendo Jericho,TPJ,Desconhecido
+085,Motorista do Raza,MR,Desconhecido
+086,Analista da CAOC 1,AC1,Tim Griffin
+087,Analista da CAOC 2,AC2,Joshua Harto
+088,Analista da CAOC 3,AC3,Micah Hauptman
+089,Analista da CAOC 4,AC4,James Bethea
+090,Sargento da CAOC,SC,Sylvette Ortiz
+091,Piloto de caca 1,PC1,Tim Rigby
+092,Piloto de caca 2,PC2,Russell Richardson
+093,Oficial da Forca Aerea,OFA,Marvin Jordan
+094,Tenente da Forca Aerea,TFA,Justin Rex
+095,Capitao da Forca Aerea CAOC,CFAC,Desconhecido
+096,Guardacosta do Obadiah,GO,Desconhecido
+097,Engenheiro Frank Nyi,EFN,Frank Nyi
+098,Agente da Shield 1,AS1,David Castillo
+099,Agente da Shield 2,AS2,Darryl Reeves
+100,Agente da Shield 3,AS3,Jason Rodriguez
+101,Agente da Shield 4,AS4,Paul Sklar
+102,Agente da Shield 5,AS5,Desconhecido
+103,Crianca no Carro SUV 1,CCS1,Reid Harper
+104,Crianca no Carro SUV 2,CCS2,Summer Kylie Remington
+105,Crianca no Carro SUV 3,CCS3,Ava Rose Williams
+106,Crianca no Carro SUV 4,CCS4,Vladimir Kubr
+107,Crianca no Carro SUV 5,CCS5,Callie Marie Croughwell
+108,Mulher no Carro SUV,MCS,Donna Evans Merlo
+109,Motoqueiro,M,Desconhecido
+110,Reporter cena final 1,RCF1,Desconhecido
+111,Reporter cena final 2,RCF2,Desconhecido
+112,Reporter cena final 3,RCF3,Desconhecido
+113,Cameraman cena final 1,CCF1,Desconhecido
+114,Cameraman cena final 2,CCF2,Desconhecido

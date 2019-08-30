@@ -35,6 +35,7 @@ class Relation:
                         else:
                             self.relation.loc[rel,'Weight']+=self.actual_weight
         self.relation=self.relation.drop('1')
+        self.relation=self.relation.sort_index(0)
         self.relation['ID']=list(range(1,self.relation.shape[0]+1))
         self.relation=self.relation.set_index('ID')
         self.executed=True
@@ -58,8 +59,8 @@ class Relation:
         else:
             print('Execute primeiro')
             
-    def excel(self,nome):
+    def excel(self):
         if self.executed:
-            self.relation.to_csv(self.directory+'/Relation.xls')
+            self.relation.to_excel(self.directory+'/Relation.xls')
         else:
             print('Execute primeiro')

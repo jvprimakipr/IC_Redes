@@ -184,7 +184,7 @@ class Scene:
     def excel(self):
         if self.scene.loc[self.sc(),'P1']=='':
             arq=self.scene.drop([self.sc()])
-            arq.to_csv(self.directory+'/Scene.xls')
+            arq.to_excel(self.directory+'/Scene.xls')
         else:
             print('Digite o tempo final da ultima cena')
     
