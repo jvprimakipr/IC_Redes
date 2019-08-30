@@ -45,7 +45,11 @@ class Scene:
         else:
             print('Tempo errado')
         
-    def timef(self,m,s):
+    def timef(self,m=False,s=False):
+        if not m or not s:
+            m=self.scene.iloc[-1,0]+1
+            s=(self.scene.iloc[-1,1]+59)%60
+            if s==59: m=m-1      
         if m>=0 and s>=0 and s<60:
             var=self.sec(m,s)-self.sec(self.scene.iloc[-1,0],self.scene.iloc[-1,1])
             if var>0 and var <60:

@@ -17,51 +17,61 @@ ID,Label,Nick,Actor
 016,Nick Fury,Nick,Samuel L. Jackson
 017,Stan Lee,Stan,Stan Lee
 018,Narrador da Cerimonia,NCP,Will Lyman
-019,Terrorista Gritador 1,GG1,Daston Kalili
-020,Terrorista Gritador 2,GG2,Ido Ezra
-021,Terrorista 1,G1,Tom Morello
-022,Terrorista 2,G2,Marco Khan
-023,Terrorista Ahmed,Ahmed,Ahmed Ahmed
-024,Terrorista Omar,Omar,Fahim Fazli
-025,Soldado Jimmy,Jimmy,Kevin Foster
-026,Soldado Pratt,Pratt,Garrett Noel
-027,Soldado Ramirez,Rami,Eileen Weisinger
-028,Piloto de caca 1,PC1,Tim Rigby
-029,Piloto de caca 2,PC2,Russell Richardson
-030,Reporter Amira Ahmed,Amira,Nazanin Boniadi
-031,Colonel Craig,Craig,Thomas Craig Plumer
-032,Negociante na mesa de Craps,NMC,Robert Berkman
-033,Mulher na mesa de Craps 1,MMC1,Stacy Stas
-034,Mulher na mesa de Craps 2,MMC2,Lauren Scyphers
-035,Engenheiro Frank Nyi,Eng,Dr. Frank Nyi
-036,Oficial da Forca Aerea,OFA,Marvin Jordan
-037,Jim Cramer,Jim,Jim Cramer
-038,Mulher no Carro SUV,MCS,Donna Evans Merlo
-039,Criança no Carro SUV 1,CCS1,Reid Harper
-040,Criança no Carro SUV 2,CCS2,Summer Kylie Remington
-041,Criança no Carro SUV 3,CCS3,Ava Rose Williams
-042,Criança no Carro SUV 4,CCS4,Vladimir Kubr
-043,Criança no Carro SUV 5,CCS5,Callie Marie Croughwell
-044,Criança de Gulmira,CG,Javan Tahir
-045,Mulher de Gulmira,MG,Sahar Bibiyan
-046,Reporter 1,R1,Patrick O'Connell
-047,Reporter 2,R2,Adam Harrington
-048,Reporter 3,R3,Meera Simhan
-049,Reporter 4,R4,Ben Newmark
-050,Reporter 5,R5,Nick Nicholson
-051,Aeromoca 1,A1,Ricki Noel Lander
-052,Aeromoca 2,A2,Jeannine Kaspar
-053,Aeromoca 3,A3,Sarah Cahill
-054,Tenente da Forca Aerea,TFA,Justin Rex
-055,Zorianna Kit,Kit,Zorianna Kit
-056,Garota do Stan 1,GS1,Lana Kinnear
-057,Garota do Stan 2,GS2,Nicole Lindeblad
-058,Garota do Stan 3,GS3,Masha Lund
-059,Garota do Stan 4,GS4,Gabrielle Tuite
-060,Analistas da CAOC 1,AC1,Tim Griffin
-061,Analistas da CAOC 2,AC2,Joshua Harto
-062,Analistas da CAOC 3,AC3,Micah Hauptman
-063,Analistas da CAOC 4,AC4,James Bethea
-064,Beleza de Dubai,BD,America Olivo
-065,Jornalista,Jorn,Brett Padelford
-066,Bombeiro no teto,BT,George Watson
+019,Terrorista Ahmed,T1,Ahmed Ahmed
+020,Terrorista Omar,T2,Fahim Fazli
+021,Terrorista 3,T3,Tom Morello
+022,Terrorista 4,T4,Marco Khan
+023,Terrorista 5,T5,Daston Kalili
+024,Terrorista 6,T6,Ido Ezra
+025,Terrorista das cameras,T7,Ray Siegle
+026,Terrorista 8,T8,Ben Hernandez
+027,Soldado Jimmy,S1,Kevin Foster
+028,Soldado Pratt,S2,Garrett Noel
+029,Soldado Ramirez,S3,Eileen Weisinger
+030,Piloto de caca 1,PC1,Tim Rigby
+031,Piloto de caca 2,PC2,Russell Richardson
+032,Colonel Craig,CC,Thomas Craig Plumer
+033,Oficial EUA,OE,Bill Walters
+034,General Sullivan,GS,Desconhecido
+035,General Afeganistão,GA,David Yukon
+036,Negociante na mesa de Craps,NMC,Robert Berkman
+037,Mulher na mesa de Craps 1,MMC1,Stacy Stas
+038,Mulher na mesa de Craps 2,MMC2,Lauren Scyphers
+039,Mulher na mesa de Craps 3,MMC3,Marvina Davis
+040,Cesar Fantasiado,CF,Hal Burton
+041,Guardacostas do Tony 1,GT1,Desconhecido
+042,Guardacostas do Tony 2,GT2,Desconhecido
+043,Guardacostas do Tony 3,GT3,Desconhecido
+044,Engenheiro Frank Nyi,E,Dr. Frank Nyi
+045,Oficial da Forca Aerea,OFA,Marvin Jordan
+046,Jim Cramer,JC,Jim Cramer
+047,Mulher no Carro SUV,MCS,Donna Evans Merlo
+048,Criança no Carro SUV 1,CCS1,Reid Harper
+049,Criança no Carro SUV 2,CCS2,Summer Kylie Remington
+050,Criança no Carro SUV 3,CCS3,Ava Rose Williams
+051,Criança no Carro SUV 4,CCS4,Vladimir Kubr
+052,Criança no Carro SUV 5,CCS5,Callie Marie Croughwell
+053,Criança de Gulmira,CG,Javan Tahir
+054,Mulher de Gulmira,MG,Sahar Bibiyan
+055,Reporter Amira Ahmed,RAA,Nazanin Boniadi
+056,Reporter 1,R1,Patrick O'Connell
+057,Reporter 2,R2,Adam Harrington
+058,Reporter 3,R3,Meera Simhan
+059,Reporter 4,R4,Ben Newmark
+060,Reporter 5,R5,Nick Nicholson
+061,Aeromoca 1,A1,Ricki Noel Lander
+062,Aeromoca 2,A2,Jeannine Kaspar
+063,Aeromoca 3,A3,Sarah Cahill
+064,Tenente da Forca Aerea,TFA,Justin Rex
+065,Zorianna Kit,ZK,Zorianna Kit
+066,Garota do Stan 1,GS1,Lana Kinnear
+067,Garota do Stan 2,GS2,Nicole Lindeblad
+068,Garota do Stan 3,GS3,Masha Lund
+069,Garota do Stan 4,GS4,Gabrielle Tuite
+070,Analistas da CAOC 1,AC1,Tim Griffin
+071,Analistas da CAOC 2,AC2,Joshua Harto
+072,Analistas da CAOC 3,AC3,Micah Hauptman
+073,Analistas da CAOC 4,AC4,James Bethea
+074,Beleza de Dubai,BD,America Olivo
+075,Jornalista,J,Brett Padelford
+076,Bombeiro no teto,BT,George Watson
