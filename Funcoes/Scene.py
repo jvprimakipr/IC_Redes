@@ -18,7 +18,7 @@ class Scene:
         Id=self.convert(name)
         if Id is not False:
             if self.find(Id):
-                print('Id repetido na cena')
+                print(self.sc()+': Id repetido na cena')
             else:
                 self.actual_col+=1
                 if self.actual_col > self.scene.shape[1]-5:
@@ -41,12 +41,12 @@ class Scene:
                 self.scene.iloc[-1,0]=m
                 self.scene.iloc[-1,1]=s
             else:
-                print('Tempo Inicial <= Tempo Final da cena anterior')
+                print(self.sc()+': Tempo Inicial <= Tempo Final da cena anterior')
         else:
-            print('Tempo errado')
+            print(self.sc()+': Tempo errado')
         
     def timef(self,m=False,s=False):
-        if not m or not s:
+        if (not m and not s) and (type(m)==bool and type(s)==bool):
             m=self.scene.iloc[-1,0]+1
             s=(self.scene.iloc[-1,1]+59)%60
             if s==59: m=m-1      
@@ -65,7 +65,7 @@ class Scene:
                 else:
                     self.timei(m,s+1)
             elif var<=0:
-                print('Tempo Final <= Tempo Inicial')
+                print(self.sc()+': Tempo Final <= Tempo Inicial')
             else:
                 print(self.sc()+' possui mais de 1 minuto')
     
@@ -105,10 +105,10 @@ class Scene:
             elif len(L2)==1:
                 return L2[0]
             elif len(L1)==0 and len(L2)==0:
-                print('Personagem não encontrado')
+                print(self.sc()+': Personagem '+name+' não encontrado')
                 return False
         else:
-            print('ID incorreto')
+            print(self.sc()+': ID incorreto')
             return False
     
     def reconvert(self,num):

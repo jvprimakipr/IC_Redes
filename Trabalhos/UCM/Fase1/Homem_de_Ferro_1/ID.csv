@@ -1,86 +1,106 @@
 ID,Label,Nick,Actor
 001,Tony Stark / Homem de Ferro,Tony,Robert Downey Jr.
 002,James Rhodes / Maquina de Combate,Rhodes,Terrence Howard
-003,Obadiah Stane / Monge de Ferro,Monge,Jeff Bridges
-004,Pepper Potts,Pepper,Gwyneth Paltrow
-005,Christine Everhart,Chris,Leslie Bibb
-006,Yinsen,Yin,Shaun Toub
-007,Raza,Raza,Faran Tahir
-008,Phillip Coulson / Agente Coulson,Phil,Clark Gregg
-009,General Gabriel,General,Bill Smitrovich
-010,Abu Bakar,Abu,Sayed Badreya
-011,Jarvis,IA,Paul Bettany
-012,Harold Hogan,Happy,Jon Favreau
-013,William Ginter Riva,Will,Peter Billingsley
-014,Major Allen,Major,Tim Guinee
-015,Howard Stark,Howard,Gerard Sanders
-016,Nick Fury,Nick,Samuel L. Jackson
-017,Stan Lee,Stan,Stan Lee
-018,Soldado Jimmy,S1,Kevin Foster
-019,Soldado Pratt,S2,Garrett Noel
-020,Soldado Ramirez,S3,Eileen Weisinger
-021,Colonel Craig,CC,Thomas Craig Plumer
-022,Oficial EUA,OE,Bill Walters
-023,General Sullivan,GS,Desconhecido
-024,General Afeganistão,GA,David Yukon
-025,Aeromoca 1,A1,Ricki Noel Lander
-026,Aeromoca 2,A2,Jeannine Kaspar
-027,Aeromoca 3,A3,Sarah Cahill
-028,Narrador da Cerimonia,NCP,Will Lyman
-029,Negociante na mesa de Craps,NMC,Robert Berkman
-030,Mulher na mesa de Craps 1,MMC1,Stacy Stas
-031,Mulher na mesa de Craps 2,MMC2,Lauren Scyphers
-032,Mulher na mesa de Craps 3,MMC3,Marvina Davis
-033,Cesar Fantasiado,CF,Hal Burton
-034,Guardacostas do Tony 1,GT1,Desconhecido
-035,Guardacostas do Tony 2,GT2,Desconhecido
-036,Guardacostas do Tony 3,GT3,Desconhecido
-037,Terrorista Ahmed,T1,Ahmed Ahmed
-038,Terrorista Omar,T2,Fahim Fazli
-039,Terrorista 3,T3,Tom Morello
-040,Terrorista 4,T4,Marco Khan
-041,Terrorista 5,T5,Daston Kalili
-042,Terrorista 6,T6,Ido Ezra
-043,Terrorista 7 das cameras,T7,Ray Siegle
-044,Terrorista 8,T8,Ben Hernandez
-045,Terrorista 9 aux cameras,T9,Desconhecido
-046,Terrorista 10 batendo na porta,T10,Desconhecido
-047,Terrorista 11 burro,T11,Desconhecido
-048,Terrorista atirador 1,TA1,Brian Simpson
-049,Terrorista atirador 2,TA2,Desconhecido
-050,Terrorista atirador 3,TA3,Jon Braver
-051,Terrorista atirador 4,TA4,Daniel Stevens
-052,Terrorista atirador 5,TA5,Darnien Moreno
-053,Terrorista sniper 1,TS1,Desconhecido
-054,Terrorista sniper 2,TS2,Desconhecido
-055,Reporter 1,R1,Patrick O'Connell
-056,Reporter 2,R2,Adam Harrington
-057,Reporter 3,R3,Meera Simhan
-058,Reporter 4,R4,Ben Newmark
-059,Reporter 5,R5,Nick Nicholson
-060,Reporter Amira Ahmed,RAA,Nazanin Boniadi
-061,Jim Cramer,JC,Jim Cramer
-062,Oficial da Forca Aerea,OFA,Marvin Jordan
-063,Tenente da Forca Aerea,TFA,Justin Rex
-064,Piloto de caca 1,PC1,Tim Rigby
-065,Piloto de caca 2,PC2,Russell Richardson
-066,Engenheiro Frank Nyi,E,Dr. Frank Nyi
-067,Mulher no Carro SUV,MCS,Donna Evans Merlo
-068,Criança no Carro SUV 1,CCS1,Reid Harper
-069,Criança no Carro SUV 2,CCS2,Summer Kylie Remington
-070,Criança no Carro SUV 3,CCS3,Ava Rose Williams
-071,Criança no Carro SUV 4,CCS4,Vladimir Kubr
-072,Criança no Carro SUV 5,CCS5,Callie Marie Croughwell
-073,Criança de Gulmira,CG,Javan Tahir
-074,Mulher de Gulmira,MG,Sahar Bibiyan
-075,Zorianna Kit,ZK,Zorianna Kit
-076,Garota do Stan 1,GS1,Lana Kinnear
-077,Garota do Stan 2,GS2,Nicole Lindeblad
-078,Garota do Stan 3,GS3,Masha Lund
-079,Garota do Stan 4,GS4,Gabrielle Tuite
-080,Analistas da CAOC 1,AC1,Tim Griffin
-081,Analistas da CAOC 2,AC2,Joshua Harto
-082,Analistas da CAOC 3,AC3,Micah Hauptman
-083,Analistas da CAOC 4,AC4,James Bethea
-084,Jornalista,J,Brett Padelford
-085,Bombeiro no teto,BT,George Watson
+003,Pepper Potts,Pepper,Gwyneth Paltrow
+004,Obadiah Stane / Monge de Ferro,Monge,Jeff Bridges
+005,Jarvis,IA,Paul Bettany
+006,Robo Dedinho de Manteiga,Dedo,Maquina
+007,Christine Everhart,Chris,Leslie Bibb
+008,Yinsen,Yin,Shaun Toub
+009,Raza,Raza,Faran Tahir
+010,Phillip Coulson / Agente Coulson,Phil,Clark Gregg
+011,General Gabriel,General,Bill Smitrovich
+012,Abu Bakar,Abu,Sayed Badreya
+013,Harold Hogan,Happy,Jon Favreau
+014,William Ginter Riva,Will,Peter Billingsley
+015,Major Allen,Major,Tim Guinee
+016,Howard Stark,Howard,Gerard Sanders
+017,Nick Fury,Nick,Samuel L. Jackson
+018,Stan Lee,Stan,Stan Lee
+019,Soldado Jimmy,S1,Kevin Foster
+020,Soldado Pratt,S2,Garrett Noel
+021,Soldado Ramirez,S3,Eileen Weisinger
+022,Colonel Craig,CC,Thomas Craig Plumer
+023,Oficial EUA,OE,Bill Walters
+024,General Sullivan,GS,Desconhecido
+025,General Afeganistão,GA,David Yukon
+026,Aeromoca 1,A1,Ricki Noel Lander
+027,Aeromoca 2,A2,Jeannine Kaspar
+028,Aeromoca 3,A3,Sarah Cahill
+029,Narrador da Cerimonia,NCP,Will Lyman
+030,Negociante na mesa de Craps,NMC,Robert Berkman
+031,Mulher na mesa de Craps 1,MMC1,Stacy Stas
+032,Mulher na mesa de Craps 2,MMC2,Lauren Scyphers
+033,Mulher na mesa de Craps 3,MMC3,Marvina Davis
+034,Cesar Fantasiado,CF,Hal Burton
+035,Guardacosta do Tony 1,GT1,Desconhecido
+036,Guardacosta do Tony 2,GT2,Desconhecido
+037,Guardacosta do Tony 3,GT3,Desconhecido
+038,Terrorista Mascarado,T0,Desconhecido
+039,Terrorista Ahmed,T1,Ahmed Ahmed
+040,Terrorista Omar,T2,Fahim Fazli
+041,Terrorista 3,T3,Tom Morello
+042,Terrorista 4,T4,Marco Khan
+043,Terrorista 5,T5,Daston Kalili
+044,Terrorista 6,T6,Ido Ezra
+045,Terrorista 7 das cameras,T7,Ray Siegle
+046,Terrorista 8,T8,Ben Hernandez
+047,Terrorista 9 aux cameras,T9,Desconhecido
+048,Terrorista 10 batendo na porta,T10,Desconhecido
+049,Terrorista 11 burro,T11,Desconhecido
+050,Terrorista 12 encontra armadura,T12,Desconhecido
+051,Terrorista atirador 1,TA1,Brian Simpson
+052,Terrorista atirador 2,TA2,Desconhecido
+053,Terrorista atirador 3,TA3,Jon Braver
+054,Terrorista atirador 4,TA4,Daniel Stevens
+055,Terrorista atirador 5,TA5,Darnien Moreno
+056,Terrorista sniper 1,TS1,Desconhecido
+057,Terrorista sniper 2,TS2,Desconhecido
+058,Reporter 1,R1,Patrick O'Connell
+059,Reporter 2,R2,Adam Harrington
+060,Reporter 3,R3,Meera Simhan
+061,Reporter 4,R4,Ben Newmark
+062,Reporter 5,R5,Nick Nicholson
+063,Reporter Amira Ahmed,RAA,Nazanin Boniadi
+064,Jim Cramer,JC,Jim Cramer
+065,Zorianna Kit,ZK,Zorianna Kit
+066,Menino na roda gigante,MRG1,
+067,Menina na roda gigante,MRG2,
+068,Mulher do Stan 1,MS1,Lana Kinnear
+069,Mulher do Stan 2,MS2,Nicole Lindeblad
+070,Mulher do Stan 3,MS3,Masha Lund
+071,Mulher do Stan 4,MS4,Gabrielle Tuite
+072,Frentista vermelho,FV,Desconhecido
+073,Jornalista,J,Brett Padelford
+074,Atendente do Bar 1,AB1,Desconhecido
+075,Atendente do Bar 2,AB2,Desconhecido
+076,Paparazzi,P,Desconhecido
+077,Pai de Gulmira,PG,Anthony Martins
+078,Mae de Gulmira,MG,Sahar Bibiyan
+079,Filho de Gulmira,FOG,Javan Tahir
+080,Filha de Gulmira,FAG,Desconhecido
+081,Terrorista de Gulmira,TG,Mark Wagner
+082,Refem de Gulmira,RG,Desconhecido
+083,Terrorista Chantageador,TC,Desconhecido
+084,Terrorista no Tanque,TT,Desconhecido
+085,Terrorista protegendo Jericho,TPJ,Desconhecido
+086,Motorista do Raza,MR,Desconhecido
+087,Analista da CAOC 1,AC1,Tim Griffin
+088,Analista da CAOC 2,AC2,Joshua Harto
+089,Analista da CAOC 3,AC3,Micah Hauptman
+090,Analista da CAOC 4,AC4,James Bethea
+091,Sargento da CAOC,SC,Sylvette Ortiz
+092,Piloto de caca 1,PC1,Tim Rigby
+093,Piloto de caca 2,PC2,Russell Richardson
+094,Oficial da Forca Aerea,OFA,Marvin Jordan
+095,Tenente da Forca Aerea,TFA,Justin Rex
+096,Capitao da Forca Aerea CAOC,CFAC,Desconhecido
+097,Guardacosta do Obadiah,GO,Desconhecido
+098,Engenheiro Frank Nyi,E,Dr. Frank Nyi
+099,Criança no Carro SUV 1,CCS1,Reid Harper
+100,Criança no Carro SUV 2,CCS2,Summer Kylie Remington
+101,Criança no Carro SUV 3,CCS3,Ava Rose Williams
+102,Criança no Carro SUV 4,CCS4,Vladimir Kubr
+103,Criança no Carro SUV 5,CCS5,Callie Marie Croughwell
+104,Mulher no Carro SUV,MCS,Donna Evans Merlo
+105,Bombeiro no teto,BT,George Watson
