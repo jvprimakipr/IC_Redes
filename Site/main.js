@@ -28,13 +28,10 @@ function loadGraph(){
     if (movie=="Homem de Ferro 1"){
         graph.load();
         var data;
-	    $.ajax({
-	        type: "GET",  
-	        url: "ID.csv",
-	        dataType: "text",       
-	        success: function(response){
-		        data = $.csv.toArrays(response);
-	        }
+	    Papa.parse(fileInput.files[0], {
+            complete: function(results) {
+                console.log(results);
+            }
         });
         print(data);
     }
