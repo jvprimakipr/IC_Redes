@@ -1,0 +1,115 @@
+ID,Label,Nick,Actor,Degree
+001,Tony Stark / Homem de Ferro,Tony,Robert Downey Jr.,100
+002,James Rhodes / Maquina de Combate,Rhodes,Terrence Howard,42
+003,Pepper Potts,Pepper,Gwyneth Paltrow,19
+004,Obadiah Stane / Monge de Ferro,Monge,Jeff Bridges,35
+005,Jarvis,IA,Paul Bettany,4
+006,Robo Dedinho de Manteiga,Dedo,Maquina,3
+007,Christine Everhart,Chris,Leslie Bibb,15
+008,Yinsen,Yin,Shaun Toub,9
+009,Raza,Raza,Faran Tahir,14
+010,Phillip Coulson / Agente Coulson,Phil,Clark Gregg,9
+011,General Gabriel,General,Bill Smitrovich,5
+012,Abu Bakar,Abu,Sayed Badreya,16
+013,Harold Hogan,Happy,Jon Favreau,13
+014,William Ginter Riva,Will,Peter Billingsley,2
+015,Major Allen,Major,Tim Guinee,11
+016,Howard Stark,Howard,Gerard Sanders,3
+017,Nick Fury,Nick,Samuel L. Jackson,1
+018,Stan Lee,Stan,Stan Lee,5
+019,Soldado Jimmy,S1,Kevin Foster,3
+020,Soldado Pratt,S2,Garrett Noel,4
+021,Soldado Ramirez,S3,Eileen Weisinger,3
+022,Colonel Craig,CC,Thomas Craig Plumer,4
+023,Oficial EUA,OE,Bill Walters,4
+024,General Sullivan,GS,Desconhecido,4
+025,General Afeganistao,GA,David Yukon,2
+026,Aeromoca 1,A1,Ricki Noel Lander,4
+027,Aeromoca 2,A2,Jeannine Kaspar,4
+028,Aeromoca 3,A3,Sarah Cahill,4
+029,Narrador da Cerimonia,NCP,Will Lyman,5
+030,Negociante na mesa de Craps,NMC,Robert Berkman,6
+031,Mulher na mesa de Craps 1,MMC1,Stacy Stas,6
+032,Mulher na mesa de Craps 2,MMC2,Lauren Scyphers,6
+033,Mulher na mesa de Craps 3,MMC3,Marvina Davis,6
+034,Cesar Fantasiado,CF,Hal Burton,6
+035,Guardacosta do Tony 1,GT1,Desconhecido,7
+036,Guardacosta do Tony 2,GT2,Desconhecido,7
+037,Guardacosta do Tony 3,GT3,Desconhecido,7
+038,Terrorista Mascarado,T0,Desconhecido,3
+039,Terrorista Ahmed,T1,Ahmed Ahmed,13
+040,Terrorista Omar,T2,Fahim Fazli,4
+041,Terrorista 3,T3,Tom Morello,2
+042,Terrorista 4,T4,Marco Khan,9
+043,Terrorista 5,T5,Daston Kalili,6
+044,Terrorista 6,T6,Ido Ezra,6
+045,Terrorista 7 das cameras,T7,Ray Siegle,9
+046,Terrorista 8,T8,Ben Hernandez,7
+047,Terrorista 9,T9,Desconhecido,5
+048,Terrorista 10,T10,Desconhecido,3
+049,Terrorista 11,T11,Desconhecido,2
+050,Terrorista 12,T12,Desconhecido,1
+051,Terrorista atirador 1,TA1,Brian Simpson,3
+052,Terrorista atirador 2,TA2,Desconhecido,3
+053,Terrorista atirador 3,TA3,Jon Braver,3
+054,Terrorista atirador 4,TA4,Daniel Stevens,3
+055,Terrorista atirador 5,TA5,Darnien Moreno,3
+056,Terrorista sniper 1,TS1,Desconhecido,2
+057,Terrorista sniper 2,TS2,Desconhecido,2
+058,Reporter 1,R1,Patrick O'Connell,7
+059,Reporter 2,R2,Adam Harrington,7
+060,Reporter 3,R3,Meera Simhan,7
+061,Reporter 4,R4,Ben Newmark,7
+062,Reporter Amira Ahmed,RAA,Nazanin Boniadi,2
+063,Jim Cramer,JC,Jim Cramer,1
+064,Zorianna Kit,ZK,Zorianna Kit,2
+065,Menino na roda gigante,MRG1,,2
+066,Menina na roda gigante,MRG2,,2
+067,Mulher do Stan 1,MS1,Lana Kinnear,5
+068,Mulher do Stan 2,MS2,Nicole Lindeblad,5
+069,Mulher do Stan 3,MS3,Masha Lund,5
+070,Mulher do Stan 4,MS4,Gabrielle Tuite,5
+071,Frentista vermelho,FV,Desconhecido,1
+072,Jornalista,J,Brett Padelford,1
+073,Atendente do Bar 1,AB1,Desconhecido,2
+074,Atendente do Bar 2,AB2,Desconhecido,1
+075,Paparazzi,P,Desconhecido,3
+076,Pai de Gulmira,PG,Anthony Martins,8
+077,Mae de Gulmira,MG,Sahar Bibiyan,8
+078,Filho de Gulmira,FOG,Javan Tahir,8
+079,Filha de Gulmira,FAG,Desconhecido,8
+080,Terrorista de Gulmira,TG,Mark Wagner,8
+081,Refem de Gulmira,RG,Desconhecido,8
+082,Terrorista Chantageador,TC,Desconhecido,8
+083,Terrorista no Tanque,TT,Desconhecido,1
+084,Terrorista protegendo Jericho,TPJ,Desconhecido,1
+085,Motorista do Raza,MR,Desconhecido,1
+086,Analista da CAOC 1,AC1,Tim Griffin,11
+087,Analista da CAOC 2,AC2,Joshua Harto,11
+088,Analista da CAOC 3,AC3,Micah Hauptman,9
+089,Analista da CAOC 4,AC4,James Bethea,11
+090,Sargento da CAOC,SC,Sylvette Ortiz,5
+091,Piloto de caca 1,PC1,Tim Rigby,10
+092,Piloto de caca 2,PC2,Russell Richardson,10
+093,Oficial da Forca Aerea,OFA,Marvin Jordan,8
+094,Tenente da Forca Aerea,TFA,Justin Rex,2
+095,Capitao da Forca Aerea CAOC,CFAC,Desconhecido,8
+096,Guardacosta do Obadiah,GO,Desconhecido,4
+097,Engenheiro Frank Nyi,EFN,Frank Nyi,2
+098,Agente da Shield 1,AS1,David Castillo,7
+099,Agente da Shield 2,AS2,Darryl Reeves,6
+100,Agente da Shield 3,AS3,Jason Rodriguez,6
+101,Agente da Shield 4,AS4,Paul Sklar,7
+102,Agente da Shield 5,AS5,Desconhecido,7
+103,Crianca no Carro SUV 1,CCS1,Reid Harper,7
+104,Crianca no Carro SUV 2,CCS2,Summer Kylie Remington,7
+105,Crianca no Carro SUV 3,CCS3,Ava Rose Williams,7
+106,Crianca no Carro SUV 4,CCS4,Vladimir Kubr,7
+107,Crianca no Carro SUV 5,CCS5,Callie Marie Croughwell,7
+108,Mulher no Carro SUV,MCS,Donna Evans Merlo,7
+109,Motoqueiro,M,Desconhecido,2
+110,Reporter cena final 1,RCF1,Desconhecido,7
+111,Reporter cena final 2,RCF2,Desconhecido,7
+112,Reporter cena final 3,RCF3,Desconhecido,7
+113,Cameraman cena final 1,CCF1,Desconhecido,7
+114,Cameraman cena final 2,CCF2,Desconhecido,7

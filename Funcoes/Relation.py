@@ -5,8 +5,10 @@ class Relation:
         self.directory=directory
         self.id=0
         self.scene=0
+        #self.degree=0
         self.importing_id()
         self.importing()
+        #self.importing_id2degree()
         d1={'Source':[''],'Target':[''],'Weight':['']}
         self.relation=pd.DataFrame(d1,columns=['Source','Target','Weight'],index=['1'])
         self.actual_weight=0
@@ -46,13 +48,22 @@ class Relation:
         self.id.fillna('',inplace=True)
         self.id=self.id.applymap(lambda x: x.lower())
         
+    #def importing_id2degree(self):
+    #    self.degree=pd.read_csv(self.directory+'/ID.csv',dtype=str)
+    #    self.degree=self.degree.set_index("ID")
+    #    self.degree.fillna('',inplace=True)
+        
     def importing(self):
         self.scene=pd.read_csv(self.directory+'/Scene.csv',dtype=str)
         self.scene=self.scene.set_index("Scene")
         self.scene.fillna('',inplace=True)
         for i in self.scene.columns[0:5]:
             self.scene[i] = pd.to_numeric(self.scene[i])
-            
+    
+    #def counting(self):
+    #    self.degree["Degree"] = [(self.data()==i).sum().sum() for i in self.degree.index]
+    #    self.degree.to_csv(self.directory+'/Degree.csv')
+    
     def csv(self):
         if self.executed:
             self.relation.to_csv(self.directory+'/Relation.csv')
